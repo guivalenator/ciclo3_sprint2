@@ -1,6 +1,6 @@
 function validar_nombre_usuario(string) {
 var dato_nombre_usuario;
-dato_nombre_usuario=document.getElementById(dato_nombre_usuario).value;
+dato_nombre_usuario=document.getElementById("dato_nombre_usuario").value;
 
 expresion2=/^([0-9])*$/
 
@@ -17,8 +17,9 @@ else if (/^\s/.test(dato_nombre_usuario)){
 }
 }
 function validar_edad_usuario(edad) {
+    console.log(edad);
     var dato_edad_usuario;
-    dato_edad_usuario=document.getElementById(dato_edad_usuario).value;
+    dato_edad_usuario=document.getElementById("dato_edad_usuario").value;
 
     if (isNaN(dato_edad_usuario)){
         alert("La edad ingresada no es un nùmero");
@@ -36,7 +37,7 @@ function validar_edad_usuario(edad) {
 function validar_contrasena(string){
     var dato_contraseña;
     expresion=/[A-Za-z0-9]/;
-    dato_contraseña=document.getElementById(dato_contraseña).value;
+    dato_contraseña=document.getElementById("dato_contraseña").value;
 
         if (dato_contraseña.lenght!=6){
             alert("La contraseña debe tener 5 caracteres");
@@ -47,6 +48,6 @@ function validar_contrasena(string){
         }
         }
 
-module.exports.validar_nombre_usuario= validar_nombre_usuario;
-module.exports.validar_edad_usuario=validar_edad_usuario;
-module.exports.validar_contrasena=validar_contrasena;
+//module.exports.validar_nombre_usuario= validar_nombre_usuario;
+//module.exports.validar_edad_usuario=validar_edad_usuario;
+//module.exports.validar_contrasena=validar_contrasena;

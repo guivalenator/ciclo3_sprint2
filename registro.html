@@ -19,17 +19,17 @@
 	<form id="form_nuevo_usuario">
 		<fieldset>
 			<legend>Usuario</legend>
-				<input id="dato_nombre_usuario" type="text" >
+				<input id="dato_nombre_usuario" type="text" onblur="validar_nombre_usuario(value)">
 		</fieldset>
 		<br>
 		<fieldset>
 			<legend>Edad</legend>
-				<input id="dato_edad_usuario" type="text" onblur="validaEdad()">
+				<input id="dato_edad_usuario" type="text" onblur="validar_edad_usuario(value)">
 		</fieldset>
 		<br>
 		<fieldset>
 			<legend>Contraseña</legend>
-			<input id="dato_contraseña" type="password" >
+			<input id="dato_contraseña" type="password" onblur="validar_contrasena(value)">
 		</fieldset>
 		<br><br>
 		<button id="enviar_registro">Registar</button>
